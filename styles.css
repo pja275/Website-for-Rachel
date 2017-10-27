@@ -1,0 +1,50 @@
+div#container {
+	margin: auto;
+	margin-top: 50px;
+	width: 75%;
+	height: 75%;
+	position: relative;
+
+}
+#background {
+	z-index: -1;
+
+}
+.links {
+	z-index: -1;
+	position: absolute;
+}
+
+#paintings {
+	position: absolute;
+}
+#paintings:hover {
+	z-index: 10;
+	transform: scale(2);
+	transform-origin: center;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+	backface-visibility: hidden;
+
+}
+
+@keyframes dancing {
+0%{transform: rotateY(0deg);}
+25%{transform: rotateY(90deg);}
+50%{transform: rotateY(180deg);}
+75%{transform: rotateY(270deg);}
+100%{transform: rotateY(360deg);}
+}
+
+
+#dance:hover {
+	animation: dancing 3s infinite linear normal;
+	transform-origin: center;
+}
+
+@keyframes
+
+#photographs:hover path{
+	fill: black;
+}
+
